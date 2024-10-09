@@ -9,7 +9,7 @@ Sparky({
         m, client, args
     }) => {
         if (m.isGroup || !m.quoted) return;
-        let text = ["oni", "Send", "one", "dhan", "dapan", "දපන්", "දහන්", "ewana", "එවන්න", "ewanako", "එවන්නකො", "දපන්", "dpn", "ඔනි", "ඔනේ", "දන්න", "දන්නකො", "දපිය", "dexter", "හුත්තො"];
+        let text = ["oni", "Send", "one", "dhan", "dapan", "දපන්", "දහන්", "ewana", "එවන්න", "ewanako", "එවන්නකො", "දපන්", "dpn", "ඔනි", "ඔනේ", "දන්න", "දන්නකො", "දපිය", "cyberdexter", "හුත්තො"];
         
         for (const any of text) {
             if (args.toLowerCase().startsWith(any)) {
@@ -17,7 +17,7 @@ Sparky({
                 await m.forward(m.jid, m.quoted.message);
 
                 // Send the additional custom message " *DEXTER PROGRAMER* "
-                await client.sendMessage(m.jid, { text: " 💀 *ʀᴀᴠɪ ꜱᴛᴀᴛᴜꜱ* 💀 " });  
+                await client.sendMessage(m.jid, { text: " 💀 ᴄʏʙᴇᴇ ᴅᴇxᴛᴇʀ ꜱᴛᴀᴛᴜꜱ 💀 " });  
                 
                 return; // Exit after sending the messages
             }
